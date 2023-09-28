@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("../image/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.contrainer{
+    margin:0 auto;
+    width:900px;
+    background-color:#fff;
+}
+/*------------------------------------------nevbar-----------------------------------------------------*/
+.nevbar{
+    background: rgb(113, 161, 165);
+    overflow:hidden;
+    position:fixed;
+    width: 100%;
+    min-height:45px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    z-index: 1;
+}
+.nev-banding{
+    font-size: 2rem;
+    margin-left: 210px;
+}
+
+li{
+    margin-left: 25px;
+    list-style: none;   
+    display: inline-block;
+    padding:10px;
+    color:black;
+}
+ul li a{
+    color:black;
+    text-decoration: none;
+}
+ul li:hover{
+    color:white;
+    text-decoration: none;
+    background:rgb(49, 83, 39);
+    display: inline-block;
+    padding:10px;
+    margin-right: 0px;
+    cursor:pointer;
+    transition: 0.5s ease 0s;
+    border-radius: 5px;
+}
+ul li a:hover{
+    color:white;
+    transition: 0.5s ease 0s;
+    
+}
+/*------------------------------------------nevbar-----------------------------------------------------*/
+/*-----------------------------------------header-----------------------------------------------------*/
+.header{
+    text-align: center;
+    height: 180px;
+    background: red;
+    padding-top: 45px;
+}
+h1{
+    font-size: 4rem;
+    padding-top: 40px;
+}
+/*-----------------------------------------header-----------------------------------------------------*/
+.content{
+    text-align: center;
+    background: #eee;
+}
+.picture{
+    display: block;
+    margin:0px auto;
+}
+.video{
+    display: block;
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.box{
+    display: grid;
+    grid-template-columns: 300px 600px;
+    border-bottom: dashed 2px #ccc;
+    
+}
+.area2 h3{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 18px;
+
+}
+.btntop{
+    background-color: aqua;
+    border-radius: 25px;
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    right:2rem;
+    bottom: 2rem;
+    opacity: 0.5;
+    cursor: pointer;
+    padding-top: 3px;
+}
+.btntop:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s ease 0s;
+}
+.arrow{
+    border: #000 solid;
+    border-width: 0px 3px 3px 0px;
+    display:inline-block;
+    padding:5px;
+    transform: rotate(-135 deg);
+    -webkit-transform: rotate(-135deg);
+    margin:7px;
+}
+h3{
+    font-size:18px;
+}
+h2{
+    text-align: center;
+}
+.footer{
+    padding-left:10px;
+    background: rgb(113, 161, 165);
+}
