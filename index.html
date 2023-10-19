@@ -4,6 +4,7 @@
             <title>My CSTU Passport</title>
             <meta charset="UTF-8">   
          <link href="css/style.css" rel="stylesheet" type="text/css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <style>
             .song{
                 color:black;
@@ -12,10 +13,46 @@
                 color:blue;
                 transition: 0.3s ease 0s;
             }
+
+            [class*="col-"] {
+            width: 100%;
+            }
+
+            @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            }
+            @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 100%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            }
+            
          </style>
     </head>
     <body>
-        <div class="nevbar">
+        <div class="nevbar col-3 col-s-3">
             <a href="index.html" class="nev-banding">CSTU passport</a>
             <ul class="nev-menu">
                 <li><a href="index.html">Home</a></li>
@@ -27,12 +64,12 @@
             <div class="header" id="top">
                 <img class="picture" src="image/header.png" alt="header picture">
             </div>
-            <div class="content"> 
+            <div class="content col-3 col-s-12"> 
                 <video class="video" width="250px" height="400px" controls>
                     <source src="video/intro.mov"> Introduce myself video
                 </video>
                 <br>
-                <div class="box">
+                <div class="box col-6 col-s-9">
                     <section class="area1">
                         <img class="picture" src="image/me.png" width="250px" height="320px" alt="My picture">
                     </section>
@@ -42,7 +79,7 @@
                         <h3>Fav song >>>> <a class="song" href="https://www.youtube.com/watch?v=NwFVSclD_uc" target="_blank">Listen now!!!</a></h3> 
                     </section>
                     <br>
-                </div>
+                </div class="col-6 col-s-9">
                 <br>
                 <h2>My Fav hobbies</h2>
                 <br>
