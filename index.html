@@ -3,7 +3,7 @@
     <head>
             <title>My CSTU Passport</title>
             <meta charset="UTF-8">   
-         <link href="css/style.css" rel="stylesheet" type="text/css">
+         <link href="css/styleindex.css" rel="stylesheet" type="text/css">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <style>
             .song{
@@ -13,25 +13,110 @@
                 color:blue;
                 transition: 0.3s ease 0s;
             }
-
+            @media only screen and (max-width: 600px) {
             [class*="col-"] {
             width: 100%;
+            }
+            .header{
+                text-align: center;
+                height: 180px;
+                background: red;
+                padding-top: 120px;
+            }
+            .nevbar{
+                background: rgb(113, 161, 165);
+                overflow:hidden;
+                position:fixed;
+                width: 100%;
+                text-align: center;
+                right:50px;
+
+            }
+            li{
+                margin-left: 25px;
+                list-style: none;   
+                padding:10px;
+                color:black;
+            }
+            ul li a{
+                color:black;
+                text-decoration: none;
+            }
+            ul li:hover{
+                color:white;
+                text-decoration: none;
+                background:rgb(49, 83, 39);
+                padding:10px;
+                margin-right: 0px;
+                cursor:pointer;
+                transition: 0.5s ease 0s;
+                border-radius: 5px;
+            }
+            ul li a:hover{
+                color:white;
+                transition: 0.5s ease 0s;
+                
+            }
+            
             }
 
             @media only screen and (min-width: 600px) {
             /* For tablets: */
             .col-s-1 {width: 8.33%;}
             .col-s-2 {width: 16.66%;}
-            .col-s-3 {width: 25%;}
+            .col-s-3 {width: 100%;}
             .col-s-4 {width: 33.33%;}
             .col-s-5 {width: 41.66%;}
-            .col-s-6 {width: 50%;}
+            .col-s-6 {width: 100%;}
             .col-s-7 {width: 58.33%;}
             .col-s-8 {width: 66.66%;}
             .col-s-9 {width: 75%;}
             .col-s-10 {width: 83.33%;}
             .col-s-11 {width: 91.66%;}
             .col-s-12 {width: 100%;}
+            .nevbar{
+                background: rgb(113, 161, 165);
+                overflow:hidden;
+                position:fixed;
+                width: 100%;
+                min-height:45px;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                z-index: 1;
+            }
+            .nev-banding{
+                font-size: 2rem;
+                margin-left: 210px;
+            }
+
+            li{
+                margin-left: 25px;
+                list-style: none;   
+                display: inline-block;
+                padding:10px;
+                color:black;
+            }
+            ul li a{
+                color:black;
+                text-decoration: none;
+            }
+            ul li:hover{
+                color:white;
+                text-decoration: none;
+                background:rgb(49, 83, 39);
+                display: inline-block;
+                padding:10px;
+                margin-right: 0px;
+                cursor:pointer;
+                transition: 0.5s ease 0s;
+                border-radius: 5px;
+            }
+            ul li a:hover{
+                color:white;
+                transition: 0.5s ease 0s;
+                
+            }
             }
             @media only screen and (min-width: 768px) {
             /* For desktop: */
@@ -40,13 +125,56 @@
             .col-3 {width: 100%;}
             .col-4 {width: 33.33%;}
             .col-5 {width: 41.66%;}
-            .col-6 {width: 50%;}
+            .col-6 {width: 100%;}
             .col-7 {width: 58.33%;}
             .col-8 {width: 66.66%;}
             .col-9 {width: 75%;}
             .col-10 {width: 83.33%;}
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
+            .nevbar{
+                background: rgb(113, 161, 165);
+                overflow:hidden;
+                position:fixed;
+                width: 100%;
+                min-height:45px;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                z-index: 1;
+            }
+            .nev-banding{
+                font-size: 2rem;
+                margin-left: 210px;
+            }
+
+            li{
+                margin-left: 25px;
+                list-style: none;   
+                display: inline-block;
+                padding:10px;
+                color:black;
+            }
+            ul li a{
+                color:black;
+                text-decoration: none;
+            }
+            ul li:hover{
+                color:white;
+                text-decoration: none;
+                background:rgb(49, 83, 39);
+                display: inline-block;
+                padding:10px;
+                margin-right: 0px;
+                cursor:pointer;
+                transition: 0.5s ease 0s;
+                border-radius: 5px;
+            }
+            ul li a:hover{
+                color:white;
+                transition: 0.5s ease 0s;
+                
+            }
             }
             
          </style>
@@ -70,10 +198,10 @@
                 </video>
                 <br>
                 <div class="box col-6 col-s-9">
-                    <section class="area1">
+                    <section class="area1 col-6 col-s-9">
                         <img class="picture" src="image/me.png" width="250px" height="320px" alt="My picture">
                     </section>
-                    <section class="area2">
+                    <section class="area2 col-6 col-s-9 ">
                         <h3>Name : Pitiphat Jadnuang</h3>
                         <h3>Nickname : Woonwai</h3>
                         <h3>Fav song >>>> <a class="song" href="https://www.youtube.com/watch?v=NwFVSclD_uc" target="_blank">Listen now!!!</a></h3> 
